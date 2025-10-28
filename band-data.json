@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "mapName": "Militant Black Metal Map",
+    "focus": "Peste Noire & French Militant Scene",
+    "lastUpdated": "2025-01-28",
+    "version": "1.0",
+    "description": "Underground network genealogy documenting connections between Peste Noire and related black metal projects"
+  },
+  
+  "bands": [
+    {
+      "id": "peste-noire",
+      "name": "PESTE NOIRE",
+      "type": "core",
+      "active": true,
+      "country": "France",
+      "location": "Avignone → La Chaise-Dieu",
+      "founded": 2000,
+      "status": "Active",
+      "originalName": "Dor Daedeloth",
+      "aliases": ["P.N.", "K.P.N.", "Kommando Peste Noire"],
+      "label": "La Mesnie Herlequin",
+      
+      "members": {
+        "current": [
+          {
+            "name": "Famine",
+            "realName": "Ludovic Faure",
+            "role": "All instruments, vocals",
+            "years": "2000-present"
+          }
+        ],
+        "past": [
+          {
+            "name": "Neige",
+            "realName": "Stéphane Paut",
+            "role": "Drums, guitars, vocals",
+            "years": "2001-2009"
+          },
+          {
+            "name": "Winterhalter",
+            "realName": "Jean Deflandre",
+            "role": "Drums",
+            "years": "2006-2008"
+          },
+          {
+            "name": "Audrey Sylvain",
+            "role": "Vocals, organ, piano",
+            "years": "2009-2016"
+          },
+          {
+            "name": "Ardraos",
+            "realName": "Florian Denis",
+            "role": "Drums, accordion",
+            "years": "2012-2018"
+          }
+        ]
+      },
+      
+      "discography": [
+        { "year": 2001, "title": "Aryan Supremacy", "type": "Demo" },
+        { "year": 2002, "title": "Macabre Transcendance...", "type": "Demo" },
+        { "year": 2003, "title": "Phalènes and Pestilence", "type": "Demo" },
+        { "year": 2006, "title": "La Sanie des siècles - Panégyrique de la dégénérescence", "type": "Full-length" },
+        { "year": 2007, "title": "Folkfuck Folie", "type": "Full-length" },
+        { "year": 2009, "title": "Ballade cuntre lo Anemi francor", "type": "Full-length" },
+        { "year": 2011, "title": "L'Ordure à l'état pur", "type": "Full-length" },
+        { "year": 2013, "title": "Peste Noire", "type": "Full-length" },
+        { "year": 2015, "title": "La Chaise-Dyable", "type": "Full-length" },
+        { "year": 2018, "title": "Peste Noire – Split – Peste Noire", "type": "Full-length" },
+        { "year": 2021, "title": "Le retour des pastoureaux", "type": "Full-length" }
+      ],
+      
+      "style": "Black metal with Gallic folk, medieval themes, punk influences",
+      "themes": "French nationalism, medieval history, rural decay",
+      "connections": ["Alcest", "Amesoeurs", "VOUÏVRE", "Valfunde", "Sühnopfer"]
+    },
+    
+    {
+      "id": "alcest",
+      "name": "ALCEST",
+      "type": "primary",
+      "active": true,
+      "country": "France",
+      "location": "Bagnols-sur-Cèze",
+      "founded": 1999,
+      "status": "Active",
+      
+      "members": {
+        "current": [
+          {
+            "name": "Neige",
+            "realName": "Stéphane Paut",
+            "role": "Vocals, all instruments",
+            "years": "1999-present"
+          },
+          {
+            "name": "Winterhalter",
+            "realName": "Jean Deflandre",
+            "role": "Drums",
+            "years": "2009-present"
+          }
+        ],
+        "past": [
+          {
+            "name": "Aegnor (Famine)",
+            "role": "Lead guitar",
+            "years": "2001 (Tristesse Hivernale demo)"
+          },
+          {
+            "name": "Argoth",
+            "role": "Bass",
+            "years": "2001 (Tristesse Hivernale demo)"
+          }
+        ]
+      },
+      
+      "discography": [
+        { "year": 2001, "title": "Tristesse Hivernale", "type": "Demo" },
+        { "year": 2005, "title": "Le Secret", "type": "EP" },
+        { "year": 2007, "title": "Souvenirs d'un autre monde", "type": "Full-length" },
+        { "year": 2010, "title": "Écailles de lune", "type": "Full-length" },
+        { "year": 2012, "title": "Les Voyages de l'âme", "type": "Full-length" },
+        { "year": 2014, "title": "Shelter", "type": "Full-length" },
+        { "year": 2016, "title": "Kodama", "type": "Full-length" },
+        { "year": 2019, "title": "Spiritual Instinct", "type": "Full-length" },
+        { "year": 2024, "title": "Les Chants de l'Aurore", "type": "Full-length" }
+      ],
+      
+      "style": "Blackgaze, shoegaze, post-black metal",
+      "themes": "Childhood memories, otherworldly visions, nature",
+      "connections": ["Peste Noire", "Amesoeurs", "Mortifera", "Les Discrets"]
+    },
+    
+    {
+      "id": "amesoeurs",
+      "name": "AMESOEURS",
+      "type": "primary",
+      "active": false,
+      "country": "France",
+      "location": "Avignone",
+      "founded": 2004,
+      "disbanded": 2009,
+      "status": "Split-up",
+      
+      "members": {
+        "final": [
+          {
+            "name": "Neige",
+            "role": "Screamed vocals, guitars, bass, synthesizer",
+            "years": "2004-2009"
+          },
+          {
+            "name": "Audrey Sylvain",
+            "role": "Clean vocals, bass, piano",
+            "years": "2004-2009"
+          },
+          {
+            "name": "Fursy Teyssier",
+            "role": "Guitars, bass",
+            "years": "2004, 2008-2009"
+          },
+          {
+            "name": "Winterhalter",
+            "role": "Drums",
+            "years": "2007-2009"
+          }
+        ]
+      },
+      
+      "discography": [
+        { "year": 2006, "title": "Ruines Humaines", "type": "EP" },
+        { "year": 2007, "title": "Valfunde / Amesoeurs", "type": "Split" },
+        { "year": 2009, "title": "Amesoeurs", "type": "Full-length" }
+      ],
+      
+      "style": "Post-black metal, blackgaze, post-punk",
+      "themes": "Urban decay, industrial modernity, despair",
+      "connections": ["Alcest", "Peste Noire", "Valfunde", "Les Discrets"]
+    },
+    
+    {
+      "id": "suhnopfer",
+      "name": "SÜHNOPFER",
+      "type": "primary",
+      "active": true,
+      "country": "France",
+      "location": "Auvergne-Rhône-Alpes",
+      "founded": 2000,
+      "status": "Active (one-man band)",
+      
+      "members": {
+        "current": [
+          {
+            "name": "Ardraos",
+            "realName": "Florian Denis",
+            "role": "All instruments, vocals",
+            "years": "2000-present"
+          }
+        ]
+      },
+      
+      "discography": [
+        { "year": 2007, "title": "L'aube des trépassés", "type": "EP" },
+        { "year": 2010, "title": "Nos sombres chapelles", "type": "Full-length" },
+        { "year": 2014, "title": "Offertoire", "type": "Full-length" },
+        { "year": 2019, "title": "Hic Regnant Borbonii Manes", "type": "Full-length" },
+        { "year": 2023, "title": "Nous sommes d'Hier", "type": "Full-length" }
+      ],
+      
+      "style": "Melodic black metal, baroque black metal, medieval",
+      "themes": "Bourbons dynasty, French chivalry, medieval history",
+      "connections": ["Peste Noire", "VOUÏVRE", "Aorlhac", "Christicide"]
+    },
+    
+    {
+      "id": "vouivre",
+      "name": "VOUÏVRE",
+      "type": "secondary",
+      "active": false,
+      "country": "France",
+      "location": "Paris",
+      "founded": 2015,
+      "status": "Inactive (Famine & Ardraos left 2017)",
+      
+      "members": {
+        "original": [
+          {
+            "name": "Famine",
+            "role": "Guitars, vocals",
+            "years": "2015-2017"
+          },
+          {
+            "name": "Sün",
+            "role": "Vocals, lyrics",
+            "years": "2015-present"
+          },
+          {
+            "name": "Ardraos",
+            "role": "Drums",
+            "years": "2015-2017"
+          },
+          {
+            "name": "HGH",
+            "role": "Keyboards",
+            "years": "2015-present"
+          }
+        ]
+      },
+      
+      "discography": [
+        { "year": 2017, "title": "Au gouffre", "type": "EP" }
+      ],
+      
+      "style": "Raw black metal + dark electronic",
+      "themes": "Urban decay, Parisian landscapes",
+      "connections": ["Peste Noire", "Sühnopfer", "Malsaint", "Elitism"]
+    },
+    
+    {
+      "id": "mortifera",
+      "name": "MORTIFERA",
+      "type": "secondary",
+      "active": true,
+      "country": "France",
+      "location": "Pont-Saint-Esprit",
+      "founded": 2001,
+      "status": "Active",
+      
+      "members": {
+        "current": [
+          {
+            "name": "Noktu Geiistmort",
+            "role": "All instruments, vocals",
+            "years": "2001-present"
+          }
+        ],
+        "past": [
+          {
+            "name": "Neige",
+            "role": "Drums, guitars, bass, vocals",
+            "years": "2003-2005"
+          }
+        ]
+      },
+      
+      "discography": [
+        { "year": 2003, "title": "Complainte d'une agonie céleste", "type": "EP" },
+        { "year": 2004, "title": "Vastiia Tenebrd Mortifera", "type": "Full-length", "note": "Neige wrote 'Ciel Brouillé' and 'Le Revenant'" },
+        { "year": 2010, "title": "Maledictiih", "type": "Full-length" },
+        { "year": 2013, "title": "Bleüu De Morte", "type": "Full-length" }
+      ],
+      
+      "style": "Depressive black metal, DSBM",
+      "themes": "Depression, misanthropy, death",
+      "connections": ["Alcest", "Celestia"]
+    },
+    
+    {
+      "id": "les-discrets",
+      "name": "LES DISCRETS",
+      "type": "secondary",
+      "active": true,
+      "country": "France",
+      "location": "Lyon",
+      "founded": 2003,
+      "status": "Active",
+      
+      "members": {
+        "current": [
+          {
+            "name": "Fursy Teyssier",
+            "role": "Vocals, guitars, bass, composition",
+            "years": "2003-present"
+          }
+        ],
+        "past": [
+          {
+            "name": "Winterhalter",
+            "role": "Drums",
+            "years": "2009-2013"
+          },
+          {
+            "name": "Neige",
+            "role": "Live bass",
+            "years": "2009-2013"
+          }
+        ]
+      },
+      
+      "discography": [
+        { "year": 2007, "title": "Les Discrets", "type": "EP" },
+        { "year": 2009, "title": "Alcest / Les Discrets", "type": "Split" },
+        { "year": 2010, "title": "Septembre et Ses Dernières Pensées", "type": "Full-length" },
+        { "year": 2012, "title": "Ariettes oubliées...", "type": "Full-length" },
+        { "year": 2017, "title": "Prédateurs", "type": "Full-length" }
+      ],
+      
+      "style": "Post-rock, shoegaze, indie rock (later)",
+      "themes": "Nature, melancholy, romantic darkness",
+      "connections": ["Amesoeurs", "Alcest", "Phest"]
+    },
+    
+    {
+      "id": "valfunde",
+      "name": "VALFUNDE",
+      "type": "secondary",
+      "active": false,
+      "country": "France",
+      "founded": 2007,
+      "disbanded": 2007,
+      "status": "Aborted side-project",
+      
+      "members": {
+        "original": [
+          {
+            "name": "Famine",
+            "role": "All instruments, vocals",
+            "years": "2007"
+          },
+          {
+            "name": "Audrey Sylvain",
+            "role": "Guest vocals",
+            "years": "2007"
+          }
+        ]
+      },
+      
+      "discography": [
+        { "year": 2007, "title": "Valfunde / Amesoeurs", "type": "Split 7\"", "note": "Tracks: 'Sérénade' and 'Hôpital'" }
+      ],
+      
+      "style": "Folk black metal + post-punk + electronic beats",
+      "themes": "Urban decay, melancholy",
+      "note": "Famine quickly abandoned this project. Post-punk ideas were absorbed into Peste Noire's 'Ballade cuntre lo Anemi francor' (2009)",
+      "connections": ["Amesoeurs", "Peste Noire"]
+    },
+    
+    {
+      "id": "forgotten-woods",
+      "name": "FORGOTTEN WOODS",
+      "type": "external",
+      "active": true,
+      "country": "Norway",
+      "founded": 1991,
+      "status": "Active (sporadic)",
+      
+      "members": {
+        "current": [
+          {
+            "name": "Rune Vedaa",
+            "role": "Bass, guitars",
+            "years": "1991-present"
+          },
+          {
+            "name": "Nylon",
+            "role": "Guitars, bass",
+            "years": "2006-present"
+          }
+        ],
+        "past": [
+          {
+            "name": "Olav Berland",
+            "role": "Guitars, drums",
+            "years": "1991-2022"
+          }
+        ]
+      },
+      
+      "discography": [
+        { "year": 1994, "title": "As the Wolves Gather", "type": "Full-length" },
+        { "year": 1996, "title": "The Curse of Mankind", "type": "Full-length" },
+        { "year": 2007, "title": "Race of Cain", "type": "Full-length" }
+      ],
+      
+      "style": "Depressive black metal, atmospheric black metal",
+      "themes": "Depression, nature, misanthropy",
+      "note": "Neige was announced as vocalist for 'Intolerance Div.' (2007) but collaboration never materialized",
+      "connections": ["Alcest (announced only)", "Joyless"]
+    }
+  ],
+  
+  "members": [
+    {
+      "id": "famine",
+      "name": "La Sale Famine de Valfunde",
+      "realName": "Ludovic Faure",
+      "birthYear": 1981,
+      "birthPlace": "Avignone, France",
+      "aliases": ["Famine", "Feu Cruel", "Aegnor", "Valfunde"],
+      "projects": [
+        { "band": "Peste Noire", "years": "2000-present", "role": "Founder, all instruments" },
+        { "band": "Alcest", "years": "2001", "role": "Lead guitar (Tristesse Hivernale demo)" },
+        { "band": "Valfunde", "years": "2007", "role": "All instruments" },
+        { "band": "VOUÏVRE", "years": "2015-2017", "role": "Guitars, vocals" }
+      ],
+      "label": "La Mesnie Herlequin (founded 2011)"
+    },
+    
+    {
+      "id": "neige",
+      "name": "Neige",
+      "realName": "Stéphane Paut",
+      "birthDate": "1985-04-16",
+      "birthPlace": "Bagnols-sur-Cèze, France",
+      "currentLocation": "Paris, France",
+      "projects": [
+        { "band": "Alcest", "years": "1999-present", "role": "Founder, all instruments, vocals" },
+        { "band": "Peste Noire", "years": "2001-2009", "role": "Drums, guitars, vocals" },
+        { "band": "Mortifera", "years": "2003-2005", "role": "Drums, guitars, wrote 2 songs" },
+        { "band": "Amesoeurs", "years": "2004-2009", "role": "Co-founder, screamed vocals, instruments" },
+        { "band": "Les Discrets", "years": "2009-2013", "role": "Live bass" },
+        { "band": "Forgotten Woods", "years": "2007 (announced)", "role": "Vocals (never realized)" }
+      ],
+      "note": "Publicly condemned his involvement with Peste Noire due to ideological disagreements"
+    },
+    
+    {
+      "id": "ardraos",
+      "name": "Ardraos",
+      "realName": "Florian Denis",
+      "projects": [
+        { "band": "Sühnopfer", "years": "2000-present", "role": "Founder, all instruments" },
+        { "band": "Peste Noire", "years": "2012-2018", "role": "Drums, accordion" },
+        { "band": "VOUÏVRE", "years": "2015-2017", "role": "Drums" },
+        { "band": "Aorlhac", "years": "active", "role": "Drums" },
+        { "band": "Christicide", "years": "active", "role": "Drums" }
+      ]
+    },
+    
+    {
+      "id": "winterhalter",
+      "name": "Winterhalter",
+      "realName": "Jean Deflandre",
+      "projects": [
+        { "band": "Alcest", "years": "2009-present", "role": "Drums" },
+        { "band": "Peste Noire", "years": "2006-2008", "role": "Drums" },
+        { "band": "Amesoeurs", "years": "2007-2009", "role": "Drums" },
+        { "band": "Les Discrets", "years": "2009-2013", "role": "Drums" }
+      ],
+      "note": "Key bridge between militant BM and blackgaze scene"
+    },
+    
+    {
+      "id": "audrey",
+      "name": "Audrey Sylvain",
+      "projects": [
+        { "band": "Amesoeurs", "years": "2004-2009", "role": "Co-founder, clean vocals, piano" },
+        { "band": "Peste Noire", "years": "2009-2016", "role": "Vocals, organ, piano" },
+        { "band": "Alcest", "years": "2007", "role": "Guest vocals (Souvenirs d'un autre monde)" },
+        { "band": "Valfunde", "years": "2007", "role": "Guest vocals" },
+        { "band": "Malenuit", "years": "present", "role": "Solo project" }
+      ]
+    },
+    
+    {
+      "id": "fursy",
+      "name": "Fursy Teyssier",
+      "projects": [
+        { "band": "Les Discrets", "years": "2003-present", "role": "Founder, all instruments, vocals" },
+        { "band": "Amesoeurs", "years": "2004, 2008-2009", "role": "Guitars, bass" },
+        { "band": "Phest", "years": "2003-2005", "role": "Member" },
+        { "band": "Alcest", "years": "until 2010", "role": "Live member" }
+      ],
+      "otherRole": "Illustrator (created Les Discrets artwork)"
+    }
+  ],
+  
+  "connections": [
+    {
+      "from": "Peste Noire",
+      "to": "Alcest",
+      "type": "member_overlap",
+      "members": ["Famine (Aegnor)", "Neige", "Argoth"],
+      "period": "2001",
+      "note": "Famine played lead guitar on Alcest's Tristesse Hivernale demo"
+    },
+    {
+      "from": "Peste Noire",
+      "to": "Amesoeurs",
+      "type": "member_overlap",
+      "members": ["Neige", "Audrey Sylvain", "Winterhalter"],
+      "period": "2006-2009"
+    },
+    {
+      "from": "Valfunde",
+      "to": "Amesoeurs",
+      "type": "split_release",
+      "year": 2007,
+      "note": "7\" split EP"
+    },
+    {
+      "from": "Peste Noire",
+      "to": "Sühnopfer",
+      "type": "member_overlap",
+      "members": ["Ardraos"],
+      "period": "2012-2018"
+    },
+    {
+      "from": "Peste Noire",
+      "to": "VOUÏVRE",
+      "type": "side_project",
+      "members": ["Famine", "Ardraos"],
+      "period": "2015-2017"
+    },
+    {
+      "from": "Amesoeurs",
+      "to": "Les Discrets",
+      "type": "evolution",
+      "members": ["Fursy Teyssier", "Winterhalter"],
+      "note": "Formed after Amesoeurs split"
+    },
+    {
+      "from": "Alcest",
+      "to": "Mortifera",
+      "type": "member_overlap",
+      "members": ["Neige"],
+      "period": "2003-2005"
+    }
+  ],
+  
+  "timeline": [
+    { "year": 2000, "event": "Peste Noire founded (as Dor Daedeloth) by Famine" },
+    { "year": 2000, "event": "Sühnopfer founded by Ardraos" },
+    { "year": 2001, "event": "Alcest - Tristesse Hivernale demo (with Famine)" },
+    { "year": 2004, "event": "Amesoeurs founded by Neige, Audrey, Fursy" },
+    { "year": 2006, "event": "Peste Noire debut: La Sanie des siècles" },
+    { "year": 2007, "event": "Valfunde/Amesoeurs split. Alcest - Souvenirs d'un autre monde" },
+    { "year": 2009, "event": "Amesoeurs album + split. Winterhalter joins Alcest permanently" },
+    { "year": 2011, "event": "Famine founds La Mesnie Herlequin label" },
+    { "year": 2012, "event": "Ardraos joins Peste Noire" },
+    { "year": 2015, "event": "VOUÏVRE founded by Famine + Sün" },
+    { "year": 2016, "event": "Peste Noire cancelled from Blastfest (Norway)" },
+    { "year": 2017, "event": "VOUÏVRE - Au gouffre EP released. Famine & Ardraos leave" },
+    { "year": 2023, "event": "Sühnopfer - Nous sommes d'Hier (best album)" },
+    { "year": 2024, "event": "Alcest - Les Chants de l'Aurore" }
+  ],
+  
+  "criteriaForInclusion": {
+    "primary": "Direct member connection to Peste Noire or Famine",
+    "secondary": "Significant collaboration or stylistic affinity",
+    "aesthetic": [
+      "Raw production",
+      "Medieval/folk themes",
+      "Nationalist imagery (documented historical fact)",
+      "Unconventional black metal structures",
+      "French connection (not mandatory)"
+    ],
+    "exclusions": [
+      "Generic symphonic black metal",
+      "No connection to mapped network",
+      "Commercial/mainstream approach"
+    ]
+  }
+}
