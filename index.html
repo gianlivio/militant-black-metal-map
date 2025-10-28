@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive map of underground black metal networks - Peste Noire, Alcest, Amesoeurs and French militant scene connections">
+    <meta name="keywords" content="Peste Noire, black metal, Famine, Neige, Alcest, genealogy, underground metal">
+    <title>🗡️ Militant Black Metal Map | Underground Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Torna su">⬆</button>
+
+    <!-- Search and filters -->
+    <div class="controls-wrapper">
+        <div class="controls">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Cerca band, membro, album..." aria-label="Cerca">
+                <button id="clearSearch" class="clear-btn" aria-label="Cancella ricerca">✕</button>
+            </div>
+            
+            <div class="filters">
+                <label class="filter-label">
+                    <input type="checkbox" id="filterActive" checked>
+                    <span>Solo progetti attivi</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" id="filterCore" checked>
+                    <span>Solo nucleo centrale</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" id="filterExternal">
+                    <span>Nascondi esterni</span>
+                </label>
+            </div>
+
+            <button id="themeToggle" class="theme-toggle" aria-label="Cambia tema">🌓</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="main-header">
+            <h1 class="main-title">🗡️ MILITANT BLACK METAL MAP 🗡️</h1>
+            <p class="subtitle">Underground Network Genealogy | 2000-2025</p>
+            <p class="focus-text">Focus: <strong>Peste Noire</strong> & French Militant Scene</p>
+        </header>
+        
+        <nav class="quick-nav" aria-label="Navigazione rapida">
+            <a href="#legend">Legenda</a>
+            <a href="#network">Rete</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#bands">Lista Band</a>
+        </nav>
+
+        <section id="legend" class="legend">
+            <h2>📖 Legenda dei Nodi</h2>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <span class="color-box core-box"></span>
+                    <span>Nucleo principale (Famine/Peste Noire)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box primary-box"></span>
+                    <span>Progetti primari (Alcest, Amesoeurs)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box secondary-box"></span>
+                    <span>Progetti secondari & side-projects</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box external-box"></span>
+                    <span>Collegamenti esterni</span>
+                </div>
+            </div>
+            <p class="legend-note">💡 <strong>Tip:</strong> Clicca su un membro per evidenziare tutti i suoi progetti</p>
+        </section>
+
+        <section id="network" class="network-section">
+            <h2>🕸️ Rete delle Connessioni</h2>
+            <div class="network" id="networkGrid">
+                
+                <!-- NODO: LA SALE FAMINE -->
+                <article class="node core" data-id="famine" data-active="true" data-members="famine">
+                    <header class="node-header">
+                        <h3 class="node-title">LA SALE FAMINE DE VALFUNDE</h3>
+                        <p class="node-subtitle">Ludovic Faure • Avignone, 1981</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Alias storici</h4>
+                            <p class="info-content">Feu Cruel, Aegnor, Valfunde</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Ruoli</h4>
+                            <p class="info-content">Voce, chitarra, basso, compositore principale</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Progetti fondati</h4>
+                            <ul class="connection-list">
+                                <li><span class="member-tag" data-member="famine">Peste Noire</span> (2000 - presente)</li>
+                                <li><span class="member-tag" data-member="famine">Valfunde</span> (2007 - abortito)</li>
+                                <li><span class="member-tag" data-member="famine">VOUÏVRE</span> (2015 - 2017)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Label</h4>
+                            <p class="info-content">Proprietario di <strong>La Mesnie Herlequin</strong> dal 2011</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NODO: PESTE NOIRE -->
+                <article class="node core" data-id="peste-noire" data-active="true" data-members="famine neige winterhalter ardraos audrey">
+                    <header class="node-header">
+                        <h3 class="node-title">PESTE NOIRE</h3>
+                        <p class="node-subtitle">2000 - presente • Avignone → La Chaise-Dieu</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Origine</h4>
+                            <p class="info-content">Fondato come "Dor Daedeloth" nel 2000 da Famine</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Discografia essenziale</h4>
+                            <ul class="album-list">
+                                <li><span class="year">2006</span> La Sanie des siècles (debut)</li>
+                                <li><span class="year">2007</span> Folkfuck Folie</li>
+                                <li><span class="year">2009</span> Ballade cuntre lo Anemi francor</li>
+                                <li><span class="year">2013</span> Peste Noire (self-titled)</li>
+                                <li><span class="year">2015</span> La Chaise-Dyable</li>
+                                <li><span class="year">2021</span> Le retour des pastoureaux</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Membri chiave</h4>
+                            <ul class="member-list">
+                                <li><span class="member-tag" data-member="famine">Famine</span> - sempre presente, nucleo creativo</li>
+                                <li><span class="member-tag" data-member="neige">Neige</span> - batteria/chitarra/voce (2001-2009)</li>
+                                <li><span class="member-tag" data-member="winterhalter">Winterhalter</span> - batteria (2006-2008)</li>
+                                <li><span class="member-tag" data-member="audrey">Audrey Sylvain</span> - voce/organo (2009-2016)</li>
+                                <li><span class="member-tag" data-member="ardraos">Ardraos</span> - batteria/fisarmonica (2012-2018)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NODO: NEIGE / ALCEST -->
+                <article class="node primary" data-id="alcest" data-active="true" data-members="neige winterhalter">
+                    <header class="node-header">
+                        <h3 class="node-title">NEIGE / ALCEST</h3>
+                        <p class="node-subtitle">Stéphane Paut • 16/04/1985 • Bagnols-sur-Cèze</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Progetto principale</h4>
+                            <p class="info-content"><strong>ALCEST</strong> (1999 - presente) - fondatore blackgaze</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Discografia Alcest</h4>
+                            <ul class="album-list">
+                                <li><span class="year">2001</span> Tristesse Hivernale (demo con Famine)</li>
+                                <li><span class="year">2005</span> Le Secret (EP)</li>
+                                <li><span class="year">2007</span> Souvenirs d'un autre monde</li>
+                                <li><span class="year">2010</span> Écailles de lune</li>
+                                <li><span class="year">2014</span> Shelter</li>
+                                <li><span class="year">2019</span> Spiritual Instinct</li>
+                                <li><span class="year">2024</span> Les Chants de l'Aurore</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Altri progetti</h4>
+                            <ul class="connection-list">
+                                <li><span class="member-tag" data-member="neige">Amesoeurs</span> (2004-2009) - co-fondatore</li>
+                                <li><span class="member-tag" data-member="neige">Mortifera</span> (2003-2005) - 2 brani</li>
+                                <li><span class="member-tag" data-member="neige">Peste Noire</span> (2001-2009) - ha condannato posizioni PN</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NODO: AMESOEURS -->
+                <article class="node primary" data-id="amesoeurs" data-active="false" data-members="neige audrey winterhalter fursy">
+                    <header class="node-header">
+                        <h3 class="node-title">AMESOEURS</h3>
+                        <p class="node-subtitle">2004 - 2009 • Avignone</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Formazione</h4>
+                            <ul class="member-list">
+                                <li><span class="member-tag" data-member="neige">Neige</span> - voce urlata, chitarra, basso</li>
+                                <li><span class="member-tag" data-member="audrey">Audrey Sylvain</span> - voce pulita, piano</li>
+                                <li><span class="member-tag" data-member="fursy">Fursy Teyssier</span> - chitarra (2004, 2008-09)</li>
+                                <li><span class="member-tag" data-member="winterhalter">Winterhalter</span> - batteria (2007-2009)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Discografia</h4>
+                            <ul class="album-list">
+                                <li><span class="year">2006</span> Ruines Humaines (EP)</li>
+                                <li><span class="year">2007</span> Split con Valfunde</li>
+                                <li><span class="year">2009</span> Amesoeurs (album) - poi scioglimento</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Stile</h4>
+                            <p class="info-content">Post-black/blackgaze con influenze post-punk (Joy Division, The Cure)</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NODO: MORTIFERA -->
+                <article class="node secondary" data-id="mortifera" data-active="true" data-members="neige noktu">
+                    <header class="node-header">
+                        <h3 class="node-title">MORTIFERA</h3>
+                        <p class="node-subtitle">2001 - presente • Pont-Saint-Esprit</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Nucleo</h4>
+                            <p class="info-content"><span class="member-tag" data-member="noktu">Noktu Geiistmort</span> - fondatore DSBM</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Contributo Neige (2003-2005)</h4>
+                            <p class="info-content">Scrisse "Ciel Brouillé" e "Le Revenant" per Vastiia Tenebrd Mortifera (2004)</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Discografia</h4>
+                            <ul class="album-list">
+                                <li><span class="year">2004</span> Vastiia Tenebrd Mortifera</li>
+                                <li><span class="year">2010</span> Maledictiih</li>
+                                <li><span class="year">2013</span> Bleüu De Morte</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NODO: ARDRAOS / SÜHNOPFER -->
+                <article class="node primary" data-id="suhnopfer" data-active="true" data-members="ardraos">
+                    <header class="node-header">
+                        <h3 class="node-title">ARDRAOS / SÜHNOPFER</h3>
+                        <p class="node-subtitle">Florian Denis • Auvergne-Rhône-Alpes</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Progetto principale</h4>
+                            <p class="info-content"><strong>SÜHNOPFER</strong> (2000 - presente) - one-man band medievale</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Discografia Sühnopfer</h4>
+                            <ul class="album-list">
+                                <li><span class="year">2010</span> Nos sombres chapelles</li>
+                                <li><span class="year">2014</span> Offertoire</li>
+                                <li><span class="year">2019</span> Hic Regnant Borbonii Manes</li>
+                                <li><span class="year">2023</span> Nous sommes d'Hier ⭐</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Stile</h4>
+                            <p class="info-content">Black metal melodico barocco, tematiche Borboni/cavalleria francese</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Altri progetti</h4>
+                            <ul class="connection-list">
+                                <li><span class="member-tag" data-member="ardraos">Peste Noire</span> - batteria 2012-2018</li>
+                                <li><span class="member-tag" data-member="ardraos">VOUÏVRE</span> - batteria 2015-2017</li>
+                                <li>Aorlhac, Christicide - batteria</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NODO: VOUÏVRE -->
+                <article class="node secondary" data-id="vouivre" data-active="false" data-members="famine ardraos">
+                    <header class="node-header">
+                        <h3 class="node-title">VOUÏVRE</h3>
+                        <p class="node-subtitle">2015 - 2017 • Urban decay project</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Formazione</h4>
+                            <ul class="member-list">
+                                <li><span class="member-tag" data-member="famine">Famine</span> - chitarra, voce (2015-2017)</li>
+                                <li>Sün (Malsaint) - voce, testi</li>
+                                <li><span class="member-tag" data-member="ardraos">Ardraos</span> - batteria</li>
+                                <li>HGH (Elitism) - tastiere/elettronica</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Release</h4>
+                            <ul class="album-list">
+                                <li><span class="year">2017</span> Au gouffre (EP 12") - LMH</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Concept</h4>
+                            <p class="info-content">Side A: BM raw + Side B: elettronica dark. Nato dopo viaggio a Parigi.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NODO: WINTERHALTER -->
+                <article class="node secondary" data-id="winterhalter" data-active="true" data-members="winterhalter">
+                    <header class="node-header">
+                        <h3 class="node-title">WINTERHALTER</h3>
+                        <p class="node-subtitle">Jean Deflandre • Batterista ponte</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Progetti principali</h4>
+                            <ul class="connection-list">
+                                <li><span class="member-tag" data-member="winterhalter">Alcest</span> - stabile dal 2009</li>
+                                <li><span class="member-tag" data-member="winterhalter">Peste Noire</span> (2006-2008)</li>
+                                <li><span class="member-tag" data-member="winterhalter">Amesoeurs</span> (2007-2009)</li>
+                                <li><span class="member-tag" data-member="winterhalter">Les Discrets</span> (2009-2013)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Ruolo chiave</h4>
+                            <p class="info-content">Collegamento cruciale tra scena militant BM e blackgaze</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NODO: LES DISCRETS -->
+                <article class="node secondary" data-id="les-discrets" data-active="true" data-members="fursy winterhalter neige">
+                    <header class="node-header">
+                        <h3 class="node-title">LES DISCRETS</h3>
+                        <p class="node-subtitle">2003 - presente • Post-rock/Shoegaze</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Fondatore</h4>
+                            <p class="info-content"><span class="member-tag" data-member="fursy">Fursy Teyssier</span> - multi-instrumentista, illustratore</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Line-up 2009-2013</h4>
+                            <ul class="member-list">
+                                <li><span class="member-tag" data-member="fursy">Fursy</span> - voce, chitarra, basso</li>
+                                <li><span class="member-tag" data-member="winterhalter">Winterhalter</span> - batteria (fino 2013)</li>
+                                <li><span class="member-tag" data-member="neige">Neige</span> - basso live (fino 2013)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Discografia</h4>
+                            <ul class="album-list">
+                                <li><span class="year">2010</span> Septembre et Ses Dernières Pensées</li>
+                                <li><span class="year">2012</span> Ariettes oubliées...</li>
+                                <li><span class="year">2017</span> Prédateurs (indie/trip-hop)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NODO: AUDREY SYLVAIN -->
+                <article class="node secondary" data-id="audrey" data-active="true" data-members="audrey">
+                    <header class="node-header">
+                        <h3 class="node-title">AUDREY SYLVAIN</h3>
+                        <p class="node-subtitle">Voce ethereal • Francia</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Progetti</h4>
+                            <ul class="connection-list">
+                                <li><span class="member-tag" data-member="audrey">Amesoeurs</span> (2004-2009) - co-fondatrice</li>
+                                <li><span class="member-tag" data-member="audrey">Peste Noire</span> (2009-2016) - voce/organo</li>
+                                <li><span class="member-tag" data-member="audrey">Malenuit</span> - progetto solista attuale</li>
+                                <li>Alcest - ospite su Souvenirs (2007)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Caratteristica</h4>
+                            <p class="info-content">Voce pulita che contrasta con screaming BM - ponte verso fase teatrale PN</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NODO: VALFUNDE -->
+                <article class="node secondary" data-id="valfunde" data-active="false" data-members="famine audrey">
+                    <header class="node-header">
+                        <h3 class="node-title">VALFUNDE</h3>
+                        <p class="node-subtitle">2007 • Side-project abortito</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Storia</h4>
+                            <p class="info-content">Split 7" con Amesoeurs (nov 2007). Tracce: "Sérénade" + "Hôpital"</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Stile</h4>
+                            <p class="info-content">Folk BM + post-punk + beat elettronici. Registrato in bassa qualità su "attrezzatura obsoleta"</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Destino</h4>
+                            <p class="info-content">Famine abbandonò. Influenze assorbite in Ballade cuntre lo Anemi francor (2009)</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NODO: FORGOTTEN WOODS -->
+                <article class="node external" data-id="forgotten-woods" data-active="true" data-members="neige">
+                    <header class="node-header">
+                        <h3 class="node-title">FORGOTTEN WOODS</h3>
+                        <p class="node-subtitle">1991 - presente • Norvegia (DSBM pioneers)</p>
+                    </header>
+                    
+                    <div class="node-content">
+                        <div class="info-section">
+                            <h4 class="info-label">Nucleo norvegese</h4>
+                            <ul class="member-list">
+                                <li>Rune Vedaa - fondatore</li>
+                                <li>Olav Berland (1991-2022)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Connessione Neige</h4>
+                            <p class="info-content">Annunciato come cantante per "Intolerance Div." (2007) - mai realizzato</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4 class="info-label">Discografia essenziale</h4>
+                            <ul class="album-list">
+                                <li><span class="year">1994</span> As the Wolves Gather</li>
+                                <li><span class="year">2007</span> Race of Cain</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section">
+            <h2>⏳ Timeline Cronologica</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2000</div>
+                    <div class="timeline-content">
+                        <strong>Fondazioni:</strong> Peste Noire (Dor Daedeloth) + Sühnopfer<br>
+                        Neige entra in PN alla batteria
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2001-2003</div>
+                    <div class="timeline-content">
+                        <strong>Era demo:</strong> Tristesse Hivernale (Alcest con Famine), demo PN, formazione Mortifera
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2004</div>
+                    <div class="timeline-content">
+                        <strong>Nascita Amesoeurs:</strong> Neige + Audrey + Fursy. Album Vastiia Tenebrd Mortifera (Neige scrive 2 brani)
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2006-2007</div>
+                    <div class="timeline-content">
+                        <strong>Debut PN:</strong> La Sanie des siècles + Folkfuck Folie<br>
+                        Winterhalter/Indria entrano. Neige "cacciato". Split Valfunde/Amesoeurs
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2009</div>
+                    <div class="timeline-content">
+                        <strong>Anno chiave:</strong> Album Amesoeurs → scioglimento. Ballade cuntre lo Anemi francor (PN). 
+                        Audrey entra in PN. Winterhalter diventa batterista Alcest. Nascita Les Discrets
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2010-2012</div>
+                    <div class="timeline-content">
+                        <strong>Consolidamento:</strong> Écailles de lune (Alcest), Nos sombres chapelles (Sühnopfer)<br>
+                        2011: Famine fonda La Mesnie Herlequin. 2012: Ardraos entra in PN
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2013-2015</div>
+                    <div class="timeline-content">
+                        <strong>Espansione:</strong> Album Peste Noire (2013), Shelter (Alcest 2014), La Chaise-Dyable (2015)<br>
+                        Fondazione VOUÏVRE (2015)
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2016-2018</div>
+                    <div class="timeline-content">
+                        <strong>Controversie:</strong> Cancellazione Blastfest (2016). EP Au gouffre VOUÏVRE (2017)<br>
+                        Split Peste Noire - Split - Peste Noire (2018). Condanna penale Famine
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2019-2024</div>
+                    <div class="timeline-content">
+                        <strong>Presente:</strong> Hic Regnant Borbonii Manes (Sühnopfer 2019), Le retour des pastoureaux (PN 2021)<br>
+                        Nous sommes d'Hier (Sühnopfer 2023), Les Chants de l'Aurore (Alcest 2024)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bands" class="bands-list-section">
+            <h2>📋 Lista Completa Band & Progetti</h2>
+            
+            <div class="bands-grid">
+                <div class="band-card core">
+                    <h3>🗡️ NUCLEO</h3>
+                    <ul>
+                        <li>La Sale Famine de Valfunde</li>
+                        <li>Peste Noire</li>
+                    </ul>
+                </div>
+
+                <div class="band-card primary">
+                    <h3>⚔️ PRIMARI</h3>
+                    <ul>
+                        <li>Alcest (Neige)</li>
+                        <li>Amesoeurs</li>
+                        <li>Sühnopfer (Ardraos)</li>
+                    </ul>
+                </div>
+
+                <div class="band-card secondary">
+                    <h3>🛡️ SECONDARI</h3>
+                    <ul>
+                        <li>Mortifera</li>
+                        <li>VOUÏVRE</li>
+                        <li>Les Discrets</li>
+                        <li>Valfunde</li>
+                        <li>Malenuit (Audrey)</li>
+                    </ul>
+                </div>
+
+                <div class="band-card external">
+                    <h3>🔗 ESTERNI</h3>
+                    <ul>
+                        <li>Forgotten Woods (NOR)</li>
+                        <li>Phest</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <h3>⚠️ Note Importanti</h3>
+                
+                <div class="warning-box">
+                    <p><strong>Controversie ideologiche:</strong> Peste Noire e progetti associati sono documentati in connessione con scene NSBM/estrema destra. Famine si è autodefinito "razzialista" in interviste ufficiali. Concerti cancellati nel 2016 per proteste antifasciste.</p>
+                    
+                    <p><strong>Distanziamento:</strong> Neige ha pubblicamente condannato il suo periodo in Peste Noire, dichiarando di non essere mai stato coinvolto ideologicamente (aveva 15 anni durante primi demo).</p>
+                    
+                    <p><strong>Disclaimer:</strong> Questa mappa documenta connessioni musicali e storiche. Inclusione ≠ endorsement.</p>
+                </div>
+
+                <div class="footer-info">
+                    <p><strong>Fonti:</strong> Metal Archives, Discogs, Wikipedia, interviste ufficiali (Militant Zone, Metallerium), stampa metal (Louder/Metal Hammer), inchieste (Bellingcat)</p>
+                    
+                    <p><strong>Licenza:</strong> MIT License - GitHub: <a href="https://github.com/yourusername/militant-black-metal-map" target="_blank">militant-black-metal-map</a></p>
+                    
+                    <p><strong>Aggiornato:</strong> Gennaio 2025</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
